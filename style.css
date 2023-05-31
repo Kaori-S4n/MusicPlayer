@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  height: 100%;
+  background: #F4F6FA;
+  padding: 2cm;
+  display: grid;
+  grid-template-columns: auto 6fr;
+  grid-template-rows: auto 6fr;
+}
+
+header{
+  background-color: #2c86fb25;
+  grid-column: 2;
+  margin-left: 1.5cm;
+}
+
+aside{
+  border-right: solid;
+  border-width: 1px;
+  border-color: #505c687e;
+  width: 8cm;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  padding-top: 3cm;
+}
+
+footer{
+  background: #00000041;
+  height: 5em;
+  width: 100%;
+}
+
+#Nav{
+  background-color: #ffffff;
+  height: 1.8cm;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+#ContentTab{
+  background-color: #F4F6FA;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+#MenuLeftUp, #MenuLeftDown {
+  height: auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1;
+}
+
+.TitleMenu {
+  margin-bottom: 0.3cm;
+  pointer-events: none;
+}
+
+.btnMenuLeft{
+  border: none;
+  background: none;
+  width: 5cm;
+  text-align: left;
+  color: #424242;
+  font-size: 18px;
+  height: 1.5cm;
+  padding-left: 15px;
+}
+
+.btnMenuLeft:hover{
+  background-color: #e7e7e74f;
+}
+
+.btnMenuLeft.active{
+  border: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 1.5px;
+  border-radius: 30px;
+  color: #2E92F7;
+  font-weight: bolder;
+  
+}
+
+.btnMenuLeft.active::after{
+  color: #2C87FB;
+}
+
+#MenuLeftDown{
+  margin-top: 1.5cm;
+}
+
+#IconBtnMenuL{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}

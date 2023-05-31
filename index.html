@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tabs/styletab1.css">
+</head>
+
+<body>
+  <header>
+    <ul class="nav nav-tabs" id="Nav" role="tablist">
+      <li class="nav-item">
+        <a href="#tab1" class="nav-link active" data-bs-toggle="tab" aria-current="page">Music</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a href="#tab2" class="nav-link" data-bs-toggle="tab">Podcast</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a href="#tab3" class="nav-link" data-bs-toggle="tab">Live</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a href="#tab4" class="nav-link" data-bs-toggle="tab">Radio</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content" id="ContentTab">
+      <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+        <h1>Discover</h1>
+        <div id="Cover">
+
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab2" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab3" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab4" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab5" role="tabpanel"></div>
+    </div>
+
+    <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
+    <script>
+      var triggerEl = document.querySelector('#navId a')
+      bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
+    </script>
+
+
+  </header>
+  <nav id="MenuLeftUp">
+    <span class="TitleMenu">MENU</span>
+    <button class="btnMenuLeft active" onclick="PressBtnMenuLeft(this)">
+      <svg id="IconBtnMenuL" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path
+          d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+      </svg>
+      Explorer</button>
+    <button class="btnMenuLeft" onclick="PressBtnMenuLeft(this)">
+      <svg id="IconBtnMenuL" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-file-earmark-music-fill" viewBox="0 0 16 16">
+        <path
+          d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 6.64v1.75l-2 .5v3.61c0 .495-.301.883-.662 1.123C7.974 13.866 7.499 14 7 14c-.5 0-.974-.134-1.338-.377-.36-.24-.662-.628-.662-1.123s.301-.883.662-1.123C6.026 11.134 6.501 11 7 11c.356 0 .7.068 1 .196V6.89a1 1 0 0 1 .757-.97l1-.25A1 1 0 0 1 11 6.64z" />
+      </svg>
+      Albums</button>
+    <button class="btnMenuLeft" onclick="PressBtnMenuLeft(this)">
+      <svg id="IconBtnMenuL" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-person-fill" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+      </svg>
+      Genres</button>
+    <button class="btnMenuLeft" onclick="PressBtnMenuLeft(this)">
+      <svg id="IconBtnMenuL" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-vinyl-fill" viewBox="0 0 16 16">
+        <path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0z" />
+      </svg>
+      Artist</button>
+  </nav>
+  <nav id="MenuLeftDown">
+    <span class="TitleMenu">LIBRARY</span>
+    <button class="btnMenuLeft" onclick="PressBtnMenuLeft(this)">
+      <svg id="IconBtnMenuL" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path
+          d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+      </svg>
+      Recent</button>
+    <button class="btnMenuLeft" onclick="PressBtnMenuLeft(this)">
+      <svg id="IconBtnMenuL" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-file-earmark-music-fill" viewBox="0 0 16 16">
+        <path
+          d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 6.64v1.75l-2 .5v3.61c0 .495-.301.883-.662 1.123C7.974 13.866 7.499 14 7 14c-.5 0-.974-.134-1.338-.377-.36-.24-.662-.628-.662-1.123s.301-.883.662-1.123C6.026 11.134 6.501 11 7 11c.356 0 .7.068 1 .196V6.89a1 1 0 0 1 .757-.97l1-.25A1 1 0 0 1 11 6.64z" />
+      </svg>
+      PlayList</button>
+    <button class="btnMenuLeft" onclick="PressBtnMenuLeft(this)">
+      <svg id="IconBtnMenuL" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-person-fill" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+      </svg>
+      Favorites</button>
+    <button class="btnMenuLeft" onclick="PressBtnMenuLeft(this)">
+      <svg id="IconBtnMenuL" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-person-fill" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+      </svg>
+      Local</button>
+  </nav>
+  <nav id="MenuLeftDown">
+    <span class="TitleMenu">SETTING</span>
+    <button class="btnMenuLeft" onclick="PressBtnMenuLeft(this)">
+      <svg id="IconBtnMenuL" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path
+          d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+      </svg>
+      Acount</button>
+    <button class="btnMenuLeft" onclick="PressBtnMenuLeft(this)">
+      <svg id="IconBtnMenuL" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-file-earmark-music-fill" viewBox="0 0 16 16">
+        <path
+          d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 6.64v1.75l-2 .5v3.61c0 .495-.301.883-.662 1.123C7.974 13.866 7.499 14 7 14c-.5 0-.974-.134-1.338-.377-.36-.24-.662-.628-.662-1.123s.301-.883.662-1.123C6.026 11.134 6.501 11 7 11c.356 0 .7.068 1 .196V6.89a1 1 0 0 1 .757-.97l1-.25A1 1 0 0 1 11 6.64z" />
+      </svg>
+      Logout</button>
+  </nav>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <script src="script.js"></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

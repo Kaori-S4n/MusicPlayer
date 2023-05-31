@@ -1,0 +1,8 @@
+#Cover{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  background-color: #EFEFEF;
+  width: 10cm;
+  height: 3cm;
+  border-radius: 20px;
+}
